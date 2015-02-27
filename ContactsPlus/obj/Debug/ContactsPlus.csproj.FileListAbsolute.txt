@@ -35,3 +35,40 @@ C:\Users\Dan\Documents\Visual Studio 2013\Projects\ContactsPlus\ContactsPlus\obj
 C:\Users\Dan\Documents\Visual Studio 2013\Projects\ContactsPlus\ContactsPlus\obj\Debug\Views\AddContact.g.cs
 C:\Users\Dan\Documents\Visual Studio 2013\Projects\ContactsPlus\ContactsPlus\obj\Debug\Views\AddContact.xaml
 C:\Users\Dan\Documents\Visual Studio 2013\Projects\ContactsPlus\ContactsPlus\obj\Debug\Views\AddContact.xbf
+C:\projects\contactsplus\ContactsPlus\obj\Debug\App.g.i.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\App.g.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\AddContact.g.i.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\AddContact.g.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\MainPage.g.i.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\MainPage.g.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\XamlTypeInfo.g.cs
+C:\projects\contactsplus\ContactsPlus\obj\Debug\App.xaml
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\MainPage.xaml
+C:\projects\contactsplus\ContactsPlus\obj\Debug\App.xbf
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\MainPage.xbf
+C:\projects\contactsplus\ContactsPlus\obj\Debug\XamlSaveStateFile.xml
+C:\projects\contactsplus\ContactsPlus\obj\Debug\ContactsPlus.exe
+C:\projects\contactsplus\ContactsPlus\obj\Debug\ContactsPlus.pdb
+C:\projects\contactsplus\ContactsPlus\bin\Debug\App.xbf
+C:\projects\contactsplus\ContactsPlus\bin\Debug\Views\AddContact.xbf
+C:\projects\contactsplus\ContactsPlus\bin\Debug\Views\MainPage.xbf
+C:\projects\contactsplus\ContactsPlus\bin\Debug\ContactsPlus.xr.xml
+C:\projects\contactsplus\ContactsPlus\bin\Debug\ContactsPlus.exe
+C:\projects\contactsplus\ContactsPlus\bin\Debug\ContactsPlus.pdb
+C:\projects\contactsplus\ContactsPlus\bin\Debug\resources.pri
+C:\projects\contactsplus\ContactsPlus\bin\Debug\AppxManifest.xml
+C:\projects\contactsplus\ContactsPlus\bin\Debug\ContactsPlus.build.appxrecipe
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\AddContact.xaml
+C:\projects\contactsplus\ContactsPlus\obj\Debug\Views\AddContact.xbf
+C:\projects\contactsplus\ContactsPlus\obj\Debug\priconfig.xml
+C:\projects\contactsplus\ContactsPlus\obj\Debug\priconfig.xml.intermediate
+C:\projects\contactsplus\ContactsPlus\obj\Debug\layout.resfiles
+C:\projects\contactsplus\ContactsPlus\obj\Debug\layout.resfiles.intermediate
+C:\projects\contactsplus\ContactsPlus\obj\Debug\resources.resfiles
+C:\projects\contactsplus\ContactsPlus\obj\Debug\resources.resfiles.intermediate
+C:\projects\contactsplus\ContactsPlus\obj\Debug\pri.resfiles
+C:\projects\contactsplus\ContactsPlus\obj\Debug\pri.resfiles.intermediate
+C:\projects\contactsplus\ContactsPlus\obj\Debug\qualifiers.txt
+C:\projects\contactsplus\ContactsPlus\obj\Debug\qualifiers.txt.intermediate
+C:\projects\contactsplus\ContactsPlus\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\projects\contactsplus\ContactsPlus\obj\Debug\ProjectArchitectures.txt

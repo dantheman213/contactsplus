@@ -124,27 +124,17 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
+            _typeNameTable = new string[4];
             _typeNameTable[0] = "ContactsPlus.Views.AddContact";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ContactsPlus.Common.NavigationHelper";
-            _typeNameTable[4] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[5] = "ContactsPlus.Common.ObservableDictionary";
-            _typeNameTable[6] = "Object";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "ContactsPlus.MainPage";
+            _typeNameTable[3] = "ContactsPlus.MainPage";
 
-            _typeTable = new global::System.Type[9];
+            _typeTable = new global::System.Type[4];
             _typeTable[0] = typeof(global::ContactsPlus.Views.AddContact);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ContactsPlus.Common.NavigationHelper);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[5] = typeof(global::ContactsPlus.Common.ObservableDictionary);
-            _typeTable[6] = typeof(global::System.Object);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::ContactsPlus.MainPage);
+            _typeTable[3] = typeof(global::ContactsPlus.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -180,15 +170,7 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
         }
 
         private object Activate_0_AddContact() { return new global::ContactsPlus.Views.AddContact(); }
-        private object Activate_5_ObservableDictionary() { return new global::ContactsPlus.Common.ObservableDictionary(); }
-        private object Activate_8_MainPage() { return new global::ContactsPlus.MainPage(); }
-        private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
-        {
-            var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
-            var newKey = (global::System.String)key;
-            var newItem = (global::System.Object)item;
-            collection.Add(newKey, newItem);
-        }
+        private object Activate_3_MainPage() { return new global::ContactsPlus.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -203,8 +185,6 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
             case 0:   //  ContactsPlus.Views.AddContact
                 userType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_0_AddContact;
-                userType.AddMemberName("NavigationHelper");
-                userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -217,36 +197,9 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
                 xamlType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ContactsPlus.Common.NavigationHelper
-                userType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  ContactsPlus.Common.ObservableDictionary
-                userType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_5_ObservableDictionary;
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  Object
-                xamlType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 7:   //  String
-                xamlType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  ContactsPlus.MainPage
+            case 3:   //  ContactsPlus.MainPage
                 userType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_MainPage;
+                userType.Activator = Activate_3_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -255,37 +208,11 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
         }
 
 
-        private object get_0_AddContact_NavigationHelper(object instance)
-        {
-            var that = (global::ContactsPlus.Views.AddContact)instance;
-            return that.NavigationHelper;
-        }
-        private object get_1_AddContact_DefaultViewModel(object instance)
-        {
-            var that = (global::ContactsPlus.Views.AddContact)instance;
-            return that.DefaultViewModel;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlMember xamlMember = null;
-            global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "ContactsPlus.Views.AddContact.NavigationHelper":
-                userType = (global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContactsPlus.Views.AddContact");
-                xamlMember = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlMember(this, "NavigationHelper", "ContactsPlus.Common.NavigationHelper");
-                xamlMember.Getter = get_0_AddContact_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "ContactsPlus.Views.AddContact.DefaultViewModel":
-                userType = (global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ContactsPlus.Views.AddContact");
-                xamlMember = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "ContactsPlus.Common.ObservableDictionary");
-                xamlMember.Getter = get_1_AddContact_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

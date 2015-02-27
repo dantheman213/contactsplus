@@ -1,1 +1,1 @@
-C:\Users\Dan\Documents\Visual Studio 2013\Projects\ContactsPlus\ContactsPlus\ContactsPlus.csproj;neutral
+C:\projects\contactsplus\ContactsPlus\ContactsPlus.csproj;neutral
