@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="ContactsPlus.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ContactsPlus"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:ConnectionId='1'                     >
+        
+        <StackPanel x:ConnectionId='2'                           >
+            <ListView>
+                <ListViewItem>
+                    <TextBlock Text="ContactsPlus" Foreground="White" FontSize="36" Grid.Row="0"  />
+
+                </ListViewItem>
+
+                <ListViewItem HorizontalAlignment="Right">
+                    <Button x:ConnectionId='3' Grid.Row="1"  Content="Add Contact" VerticalAlignment="Stretch"                     />
+                </ListViewItem>
+            </ListView>
+            
+            <ListView x:Name="listContacts" ItemsSource="{Binding}" HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch" Margin="15, 15, 0, 0" MinHeight="500" SelectionMode="Single"
+            >
+
+           
+                
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="80">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+
+                            </Grid.RowDefinitions>
+                            <TextBlock
+                                FontSize="32"
+                                Text="{Binding FullName}" />
+                                    <!--<TextBlock
+                                Grid.Row="1"
+                                FontSize="20"
+                                Text="{Binding Address}" />-->
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackPanel>
+
+        
+    </Grid>
+</Page>
+
