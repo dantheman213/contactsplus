@@ -9,11 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <StackPanel Margin="15, 30, 0, 0" Grid.Row="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="183*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="15, 30, 0, 0" Grid.Row="0" Grid.ColumnSpan="2">
             <TextBlock FontSize="36" Text="Add Contact"/>
         </StackPanel>
 
-        <StackPanel Margin="15, 90, 0, 0" Grid.Row="1">
+        <StackPanel Margin="15, 90, 0, 0" Grid.ColumnSpan="2">
             <TextBlock Text="First Name" TextWrapping="Wrap" />
             <TextBox x:Name="txtFirstName" TextWrapping="Wrap" Text="" />
 
@@ -26,7 +30,7 @@
             <TextBlock Text="Secondary Number" TextWrapping="Wrap" />
             <TextBox x:Name="txtSecondaryNumber" TextWrapping="Wrap" Text="" />
 
-            <Button x:Name="buttonSave" HorizontalAlignment="Right" Content="Save" />
+            <Button x:Name="buttonSave" HorizontalAlignment="Right" Content="Save" Click="buttonSave_Click" />
         </StackPanel>
     </Grid>
 </Page>

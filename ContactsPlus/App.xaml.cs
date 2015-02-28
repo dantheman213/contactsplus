@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
+using ContactsPlus.Source;
+
 // The Blank Application template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
 namespace ContactsPlus
@@ -99,7 +101,12 @@ namespace ContactsPlus
 
             // Ensure the current window is active
             Window.Current.Activate();
+
+            Database.init();
+            
         }
+
+    
 
         /// <summary>
         /// Restores the content transitions after the app has launched.

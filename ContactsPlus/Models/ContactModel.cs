@@ -4,16 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//using SQLitePCL;
+//using SQLite;
+
 namespace ContactsPlus.Models {
 
     public class ContactModel {
 
         public int ContactId { get; set; }
+
         public string FirstName { get; set; }
+
         public string LastName { get; set; }
-        public long PrimaryNumber { get; set; }
-        public long SecondaryNumber { get; set; }
-        public AddressModel Address { get; set; }
+
+        public string PrimaryNumber { get; set; }
+
+        public string SecondaryNumber { get; set; }
+
 
         public string FullName { 
             get {

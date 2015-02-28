@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+using ContactsPlus.Source;
 using ContactsPlus.Models;
 using ContactsPlus.Views;
 
@@ -25,8 +26,6 @@ namespace ContactsPlus
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        //public static List<String> ContactsStr;
-        public static List<ContactModel> ContactsList;
 
         public MainPage()
         {
@@ -52,32 +51,9 @@ namespace ContactsPlus
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
 
-            ContactsList = new List<ContactModel>();
+      
 
-            ContactModel item = new ContactModel();
-            item.ContactId = 1;
-            item.FirstName = "Bob";
-            item.LastName = "Marley";
-            item.PrimaryNumber = 7145689658;
-            
-            ContactsList.Add(item);
-
-            item = new ContactModel();
-            item.ContactId = 2;
-            item.FirstName = "Homer";
-            item.LastName = "Simpson";
-            item.PrimaryNumber = 5623698541;
-
-            ContactsList.Add(item);
-
-
-            //ContactsStr = new List<string>();
-            //ContactsStr.Add("test1");
-            //ContactsStr.Add("test2");
-            //ContactsStr.Add("test3");
-            //ContactsStr.Add("test4");
-
-            listContacts.DataContext = ContactsList;
+            listContacts.DataContext = Database.contacts;
         }
 
         private void Grid_Loaded(object sender, RoutedEventArgs e) {

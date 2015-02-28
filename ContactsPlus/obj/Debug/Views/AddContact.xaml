@@ -26,7 +26,7 @@
             <TextBlock Text="Secondary Number" TextWrapping="Wrap" />
             <TextBox x:Name="txtSecondaryNumber" TextWrapping="Wrap" Text="" />
 
-            <Button x:Name="buttonSave" HorizontalAlignment="Right" Content="Save" />
+            <Button x:ConnectionId='1' x:Name="buttonSave" HorizontalAlignment="Right" Content="Save"                          />
         </StackPanel>
     </Grid>
 </Page>

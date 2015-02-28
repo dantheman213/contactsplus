@@ -1,5 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\dan\documents\visual studio 2013\projects\contactsplus\contactsplus\obj\debug\intermediatexaml\contactsplus.exe" HashGuid="fd12bfc2-7d76-ad49-2cdc-929de7b7d2be" />
+    <ReferenceAssembly PathName="c:\users\dan\desktop\projects\contactsplus\packages\sqlite-net-pcl.1.0.11\lib\portable-net45+wp8+wpa81+win8+monoandroid10+monotouch10+xamarin.ios10\sqlite-net.dll" HashGuid="8596b871-a4ba-3722-0ba6-17d246b9ec16" />
+    <ReferenceAssembly PathName="c:\users\dan\desktop\projects\contactsplus\packages\sqlitepcl.raw_basic.0.7.1\lib\wpa81\sqlitepcl.raw.dll" HashGuid="21a5c081-d636-57e0-04dc-4da7cfefc2de" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>
