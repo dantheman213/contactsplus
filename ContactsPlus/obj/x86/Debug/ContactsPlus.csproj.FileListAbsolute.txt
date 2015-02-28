@@ -1,5 +1,4 @@
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\App.xbf
-C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\Views\AddContact.xbf
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\Views\MainPage.xbf
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\ContactsPlus.xr.xml
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\ContactsPlus.exe
@@ -9,8 +8,6 @@ C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\AppxManife
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\ContactsPlus.build.appxrecipe
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\App.g.i.cs
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\App.g.cs
-C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddContact.g.i.cs
-C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddContact.g.cs
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\MainPage.g.i.cs
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\MainPage.g.cs
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\XamlTypeInfo.g.cs
@@ -19,8 +16,6 @@ C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\Main
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\App.xbf
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\MainPage.xbf
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\XamlSaveStateFile.xml
-C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddContact.xaml
-C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddContact.xbf
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\ContactsPlus.exe
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\ContactsPlus.pdb
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\priconfig.xml
@@ -35,3 +30,8 @@ C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\qualifiers
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\Views\AddEditContact.xbf
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.g.i.cs
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.g.cs
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.xaml
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.xbf

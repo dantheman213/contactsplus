@@ -46,8 +46,8 @@
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\Views\AddContact.xbf">
-      <PackagePath>Views\AddContact.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\Views\AddEditContact.xbf">
+      <PackagePath>Views\AddEditContact.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>

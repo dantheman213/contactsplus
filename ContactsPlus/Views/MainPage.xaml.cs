@@ -59,12 +59,15 @@ namespace ContactsPlus
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            Frame.Navigate(typeof(AddContact));
+            Frame.Navigate(typeof(AddEditContact));
 
         }
 
         private void listContacts_Tapped(object sender, TappedRoutedEventArgs e) {
             ContactModel item = (ContactModel)listContacts.SelectedItem;
+
+            Frame.Navigate(typeof(AddEditContact));
+
 
             //Debug.WriteLine("asd");
         }

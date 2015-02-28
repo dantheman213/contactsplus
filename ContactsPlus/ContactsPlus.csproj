@@ -90,8 +90,8 @@
     <Compile Include="Models\AddressModel.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Source\Database.cs" />
-    <Compile Include="Views\AddContact.xaml.cs">
-      <DependentUpon>AddContact.xaml</DependentUpon>
+    <Compile Include="Views\AddEditContact.xaml.cs">
+      <DependentUpon>AddEditContact.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -116,7 +116,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\AddContact.xaml">
+    <Page Include="Views\AddEditContact.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

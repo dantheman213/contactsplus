@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="ContactsPlus.Views.AddContact"
+    x:Class="ContactsPlus.Views.AddEditContact"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ContactsPlus.Views"

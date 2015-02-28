@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 using ContactsPlus.Models;
 using ContactsPlus.Source;
 using Windows.Phone.UI.Input;
@@ -28,9 +29,11 @@ namespace ContactsPlus.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class AddContact : Page
+    public sealed partial class AddEditContact : Page
     {
-        public AddContact()
+        public ContactModel currentContact = null;
+
+        public AddEditContact()
         {
             this.InitializeComponent();
 
@@ -44,7 +47,7 @@ namespace ContactsPlus.Views
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e){
-
+            
         }
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e) {

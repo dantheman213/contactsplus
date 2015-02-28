@@ -43,7 +43,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Click" />
     </RootType>
-    <RootType FullName="ContactsPlus.Views.AddContact" />
+    <RootType FullName="ContactsPlus.Views.AddEditContact" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Items" />
       <RootProperty Name="ItemsSource" />

@@ -125,13 +125,13 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
         private void InitTypeTables()
         {
             _typeNameTable = new string[4];
-            _typeNameTable[0] = "ContactsPlus.Views.AddContact";
+            _typeNameTable[0] = "ContactsPlus.Views.AddEditContact";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "ContactsPlus.MainPage";
 
             _typeTable = new global::System.Type[4];
-            _typeTable[0] = typeof(global::ContactsPlus.Views.AddContact);
+            _typeTable[0] = typeof(global::ContactsPlus.Views.AddEditContact);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::ContactsPlus.MainPage);
@@ -169,7 +169,7 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_AddContact() { return new global::ContactsPlus.Views.AddContact(); }
+        private object Activate_0_AddEditContact() { return new global::ContactsPlus.Views.AddEditContact(); }
         private object Activate_3_MainPage() { return new global::ContactsPlus.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -182,9 +182,9 @@ namespace ContactsPlus.ContactsPlus_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  ContactsPlus.Views.AddContact
+            case 0:   //  ContactsPlus.Views.AddEditContact
                 userType = new global::ContactsPlus.ContactsPlus_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_AddContact;
+                userType.Activator = Activate_0_AddEditContact;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
