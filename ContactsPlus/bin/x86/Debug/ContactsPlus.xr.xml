@@ -15,7 +15,6 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Height" />
       <RootProperty Name="RowDefinitions" />
-      <RootEvent Name="Loaded" />
       <RootMethod Name="GetRow" />
       <RootMethod Name="SetRow" />
       <RootMethod Name="GetColumnSpan" />
@@ -27,7 +26,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Margin" />
       <RootProperty Name="Children" />
-      <RootEvent Name="Loaded" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
@@ -55,6 +53,7 @@
       <RootProperty Name="MinHeight" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">

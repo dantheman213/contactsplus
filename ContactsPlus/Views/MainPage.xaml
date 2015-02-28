@@ -8,9 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Loaded="Grid_Loaded">
+    <Grid>
         
-        <StackPanel Loaded="StackPanel_Loaded">
+        <StackPanel>
             <ListView>
                 <ListViewItem>
                     <TextBlock Text="ContactsPlus" Foreground="White" FontSize="36" Grid.Row="0"  />
@@ -23,11 +23,9 @@
             </ListView>
             
             <ListView x:Name="listContacts" ItemsSource="{Binding}" HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch" Margin="15, 15, 0, 0" MinHeight="500" SelectionMode="Single"
+            VerticalAlignment="Stretch" Margin="15, 15, 0, 0" MinHeight="500" SelectionMode="Single" Tapped="listContacts_Tapped"
             >
 
-           
-                
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <Grid Height="80">
@@ -37,11 +35,8 @@
                             </Grid.RowDefinitions>
                             <TextBlock
                                 FontSize="32"
-                                Text="{Binding FullName}" />
-                                    <!--<TextBlock
-                                Grid.Row="1"
-                                FontSize="20"
-                                Text="{Binding Address}" />-->
+                                Text="{Binding FullName}" 
+                                />
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>

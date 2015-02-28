@@ -16,6 +16,8 @@ using Windows.UI.Xaml.Navigation;
 using ContactsPlus.Source;
 using ContactsPlus.Models;
 using ContactsPlus.Views;
+using Windows.UI.Popups;
+using System.Diagnostics;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=391641
 
@@ -56,19 +58,15 @@ namespace ContactsPlus
             listContacts.DataContext = Database.contacts;
         }
 
-        private void Grid_Loaded(object sender, RoutedEventArgs e) {
-
-        }
-
-        private void StackPanel_Loaded(object sender, RoutedEventArgs e) {
-         
-            
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e) {
-
             Frame.Navigate(typeof(AddContact));
 
+        }
+
+        private void listContacts_Tapped(object sender, TappedRoutedEventArgs e) {
+            ContactModel item = (ContactModel)listContacts.SelectedItem;
+
+            //Debug.WriteLine("asd");
         }
     }
 }
