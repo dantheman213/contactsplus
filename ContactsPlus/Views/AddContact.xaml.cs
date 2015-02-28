@@ -18,6 +18,9 @@ using ContactsPlus.Source;
 using Windows.Phone.UI.Input;
 using System.ComponentModel;
 
+using Windows.UI.Popups;
+
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace ContactsPlus.Views
@@ -56,7 +59,7 @@ namespace ContactsPlus.Views
             }
         }
 
-        private void buttonSave_Click(object sender, RoutedEventArgs e) {
+        private async void buttonSave_Click(object sender, RoutedEventArgs e) {
 
             ContactModel contact = new ContactModel();
             contact.FirstName = txtFirstName.Text;
@@ -66,13 +69,18 @@ namespace ContactsPlus.Views
 
             if (Database.addContact(contact)) {
                 // successful
-                
+
+                MessageDialog dlgMessage = new MessageDialog("Contact Saved!");
+                await dlgMessage.ShowAsync();
+
                 if (Frame.CanGoBack) {
                     Frame.GoBack();
                 }
             } else {
                 // error
-                
+                MessageDialog dlgMessage = new MessageDialog("Unable to save contact!");
+                await dlgMessage.ShowAsync();
+
             }
         }
     }
