@@ -31,7 +31,7 @@ namespace ContactsPlus.Views
     /// </summary>
     public sealed partial class AddEditContact : Page
     {
-        public ContactModel currentContact = null;
+        public static ContactModel currentContact = null;
 
         public AddEditContact()
         {
@@ -47,7 +47,16 @@ namespace ContactsPlus.Views
         /// <param name="e">Event data that describes how this page was reached.
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e){
-            
+
+            if (currentContact != null) {
+                labelTitle.Text = "Edit Contact";
+
+                txtFirstName.Text = currentContact.FirstName;
+                txtLastName.Text = currentContact.LastName;
+                txtPrimaryNumber.Text = currentContact.PrimaryNumber;
+                txtSecondaryNumber.Text = currentContact.SecondaryNumber;
+
+            }
         }
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e) {
@@ -70,21 +79,45 @@ namespace ContactsPlus.Views
             contact.PrimaryNumber = txtPrimaryNumber.Text;
             contact.SecondaryNumber = txtSecondaryNumber.Text;
 
-            if (Database.addContact(contact)) {
-                // successful
+            if (currentContact == null) {
+                // new contact
 
-                MessageDialog dlgMessage = new MessageDialog("Contact Saved!");
-                await dlgMessage.ShowAsync();
+                if (Database.addContact(contact)) {
+                    // successful
 
-                if (Frame.CanGoBack) {
-                    Frame.GoBack();
+                    MessageDialog dlgMessage = new MessageDialog("Contact Saved!");
+                    await dlgMessage.ShowAsync();
+
+                    if (Frame.CanGoBack) {
+                        Frame.GoBack();
+                    }
+                } else {
+                    // error
+                    MessageDialog dlgMessage = new MessageDialog("Unable to save contact!");
+                    await dlgMessage.ShowAsync();
+
                 }
             } else {
-                // error
-                MessageDialog dlgMessage = new MessageDialog("Unable to save contact!");
-                await dlgMessage.ShowAsync();
+                // update existing contact
+                contact.ContactId = currentContact.ContactId;
 
+                if (Database.updateContact(contact)) {
+                    // successful
+
+                    MessageDialog dlgMessage = new MessageDialog("Contact Updated!");
+                    await dlgMessage.ShowAsync();
+
+                    if (Frame.CanGoBack) {
+                        Frame.GoBack();
+                    }
+                } else {
+                    // failed
+
+                    MessageDialog dlgMessage = new MessageDialog("Unable to update contact!");
+                    await dlgMessage.ShowAsync();
+                }
             }
+
         }
     }
 }

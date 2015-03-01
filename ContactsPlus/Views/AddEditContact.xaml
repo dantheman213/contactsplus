@@ -14,7 +14,7 @@
             <ColumnDefinition Width="183*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Margin="15, 30, 0, 0" Grid.Row="0" Grid.ColumnSpan="2">
-            <TextBlock FontSize="36" Text="Add Contact"/>
+            <TextBlock x:Name="labelTitle" FontSize="36" Text="Add Contact"/>
         </StackPanel>
 
         <StackPanel Margin="15, 90, 0, 0" Grid.ColumnSpan="2">

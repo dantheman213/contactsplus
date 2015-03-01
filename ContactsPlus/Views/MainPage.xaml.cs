@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 using ContactsPlus.Source;
 using ContactsPlus.Models;
 using ContactsPlus.Views;
@@ -34,8 +35,6 @@ namespace ContactsPlus
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
-         
-
         }
 
         /// <summary>
@@ -59,17 +58,29 @@ namespace ContactsPlus
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
+            AddEditContact.currentContact = null;
             Frame.Navigate(typeof(AddEditContact));
 
         }
 
-        private void listContacts_Tapped(object sender, TappedRoutedEventArgs e) {
+        private async void listContacts_Tapped(object sender, TappedRoutedEventArgs e) {
             ContactModel item = (ContactModel)listContacts.SelectedItem;
 
-            Frame.Navigate(typeof(AddEditContact));
+            if (item != null && item.ContactId > 0) {
+                ContactModel contact = Database.getContactById(item.ContactId);
 
+                if(contact == null) {
 
-            //Debug.WriteLine("asd");
+                    MessageDialog dlgMessage = new MessageDialog("Unable to load contact!");
+                    await dlgMessage.ShowAsync();
+                } else {
+
+                    AddEditContact.currentContact = contact;
+                    Frame.Navigate(typeof(AddEditContact));
+                }
+
+            }
+            
         }
     }
 }
