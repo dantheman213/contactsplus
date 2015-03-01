@@ -13,7 +13,6 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-
 using ContactsPlus.Models;
 using ContactsPlus.Source;
 using Windows.Phone.UI.Input;
@@ -61,6 +60,7 @@ namespace ContactsPlus.Views
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e) {
             Frame frame = Window.Current.Content as Frame;
+
             if (frame == null) {
                 return;
             }

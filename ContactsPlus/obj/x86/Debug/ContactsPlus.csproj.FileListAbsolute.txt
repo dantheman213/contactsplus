@@ -35,3 +35,10 @@ C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddE
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.g.cs
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.xaml
 C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\Views\AddEditContact.xbf
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\sqlite3.dll
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\SQLite-net.dll
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\SQLitePCL.raw.dll
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\bin\x86\Debug\SQLitePCL.raw.pri
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\ContactsPlus.csprojResolveAssemblyReference.cache
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\ContactsPlus.csproj.GenerateResource.Cache
+C:\Users\Dan\Desktop\projects\contactsplus\ContactsPlus\obj\x86\Debug\SQLitePCL.raw.pri.xml

@@ -4,9 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//using SQLitePCL;
-//using SQLite;
-
 namespace ContactsPlus.Models {
 
     public class ContactModel {

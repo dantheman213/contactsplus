@@ -8,3 +8,4 @@ App.xbf
 ContactsPlus.xr.xml
 Views\AddEditContact.xbf
 Views\MainPage.xbf
+sqlite3.dll

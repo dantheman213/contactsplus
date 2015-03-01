@@ -7,21 +7,15 @@ using System.Threading.Tasks;
 using ContactsPlus.Models;
 using System.Diagnostics;
 
-//using SQLite;
 
 namespace ContactsPlus.Source {
 
     public class Database {
-        //private static SQLiteConnection db = null;
         public static List<ContactModel> contacts = null;
         public static int contactCount = 0;
 
         public static void init() {
 
-            //db = new SQLiteConnection("data.db");
-            
-            //db.CreateTable<ContactModel>();
-            //contacts = db.Table<ContactModel>().ToList<ContactModel>();
             contacts = new List<ContactModel>();
         }
 
@@ -30,7 +24,6 @@ namespace ContactsPlus.Source {
             try {
                 contactCount++;
                 contact.ContactId = contactCount;
-                //db.Insert(contact);
 
                 contacts.Add(contact);
                 contacts = contacts.OrderBy(x => x.FirstName).ToList(); // sort by first name alphabetically
